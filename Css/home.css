@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+p,h1,h2,h3,h4,a,label{
+  font-family: 'Open Sans', sans-serif;
 }
 
 body{ 
@@ -13,12 +18,12 @@ navbar{
   align-items: center;
   justify-content: space-around;
   padding: 20px 0;
-  background-color: rgba(255,255,255, 0.3);
+  background-image: linear-gradient(to right, blue , purple);
 }
 
 navbar h1{
   font-size: 31px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
 }
 
 navbar ul{
@@ -34,7 +39,12 @@ navbar ul li{
 
 navbar ul a{
   text-decoration: none;
-  color: rgb(19, 19, 19);
+  color: white;
+  transition: .5s;
+}
+
+navbar ul a:hover{
+  transform: scale(1.08);
 }
 
 main{
@@ -59,7 +69,6 @@ main .content{
 main .content h2{
   font-size: 25px;
   padding: 0 0 10px 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 main .content p { 
